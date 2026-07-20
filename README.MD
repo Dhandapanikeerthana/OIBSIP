@@ -196,55 +196,18 @@ Lightweight relational database used to store reservation records.
 Used for dependency management and project build.
 
 ---
-# Screenshots
-
-## Login Page
-Screenshot 2026-07-20 225117.png 
-
-
-The login page allows users to enter their username and password to access the Online Reservation System.
-
----
-
-## Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
-The dashboard provides options to book tickets, cancel reservations, and manage the system.
-
----
-
-## Reservation Form
-
-![Reservation Form](screenshots/reservation.png)
-
-Users can enter passenger details, select train information, and reserve tickets.
-
----
-
-## Booking Successful
-
-![Booking Successful](screenshots/booking_success.png)
-
-After a successful reservation, the system generates a unique PNR number.
-
----
-
-## Cancellation Page
-
-![Cancellation Page](screenshots/cancellation.png)
-
-Users can cancel their reservation by entering the generated PNR number.
-
----
-
-## Ticket Cancelled
-
-![Ticket Cancelled](screenshots/cancelled.png)
-
-The application confirms that the reservation has been cancelled successfully.
-
----
+JavaDevelopment-Task1-OnlineReservationSystem
+│
+├── screenshots
+│   ├── login.png
+│   ├── dashboard.png
+│   ├── reservation.png
+│   ├── booking_success.png
+│   ├── cancellation.png
+│   └── cancelled.png
+├── src
+├── README.md
+...
 
 # How to Run
 
