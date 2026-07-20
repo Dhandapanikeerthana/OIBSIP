@@ -26,7 +26,7 @@ public class UserDAO {
     }
     
     public boolean registerUser(String username, String password) {
-        String query = "INSERT INTO Users (username, password) VALUES (?, ?)";
+        String query = "INSERT OR IGNORE INTO Users (username, password) VALUES (?, ?)";
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(query)) {
              
@@ -37,7 +37,7 @@ public class UserDAO {
             return rowsAffected > 0;
             
         } catch (SQLException e) {
-            System.err.println("Registration failed (possible duplicate username): " + e.getMessage());
+            System.err.println("Registration failed: " + e.getMessage());
             return false;
         }
     }
